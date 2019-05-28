@@ -1,36 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/map"
-    map:cameraZoom="13"
-    tools:context=".MainActivity"
-    android:name="com.google.android.gms.maps.SupportMapFragment" />
+    android:orientation="vertical"
+    android:weightSum="7"
+    tools:context=".MainActivity">
 
-<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
-    <!--xmlns:tools="http://schemas.android.com/tools"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:orientation="vertical"-->
-    <!--android:weightSum="7"-->
-    <!--tools:context=".MainActivity">-->
+    <TextView
+        android:id="@+id/tv_header_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:text="Jugando con mapas" />
 
-    <!--<FrameLayout-->
-        <!--android:id="@+id/container_map"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_weight="5">-->
-    <!--</FrameLayout>-->
-
-    <!--<Button-->
-        <!--android:id="@+id/btn1"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_weight="1"-->
-        <!--android:text="Button" />-->
+    <Button
+        android:id="@+id/btn_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="passToLinearLayout"
+        android:text="Mapa en linear layout" />
 
     <!--<Button-->
         <!--android:id="@+id/btn2"-->
@@ -39,4 +32,4 @@
         <!--android:layout_weight="1"-->
         <!--android:text="Button" />-->
 
-<!--</LinearLayout>-->
+</LinearLayout>
